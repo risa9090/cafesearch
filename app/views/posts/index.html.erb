@@ -1,0 +1,102 @@
+<div class="photo1"> 
+<img src="https://images.unsplash.com/photo-1542181961-9590d0c79dab?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+</div>
+
+<div class="back">
+    <div class="l-base-wide">
+        <div class="l-heading">
+            <p class="l-heading-subTitle">About</p>
+            <h2 class="l-heading-title">このサイトついて</h2>
+        </div>
+        <section class="homeAbout-container">
+            <div class="homeAbout-container-inner">
+                <div class="homeAbout-container-box">
+                    <div class="homeAbout-heading aos-init aos-animate" data-aos="fade-up">
+                        <h2 class="homeAbout-heading-title">
+                        Smoothly choose a cafe
+                        </h2>
+                        <p class="homeAbout-heading-subTitle">　　　　　　　　in Kitakyushu City.</p>
+                    </div>
+                    <p class="homeAbout-text aos-init aos-animate" data-aos="fade-up">
+                        カフェ選びって意外と時間かかりませんか？
+                        <br>
+                        <br>
+                        私が住む北九州市には多くのカフェがあり、私自身カフェを選ぶのにすごく時間がかかってしまいます。
+                        <br>
+                        <br>
+                        そこでカフェ選びをサポートするだけでなく、北九州市のカフェを知るきっかけになってもらえるサイトを作りたいと思い
+                        今回このサイトを作成しました。
+                        <br>
+                        <br>
+                        ランキングや診断によるカフェ提案など様々な項目からカフェ選びをサポートします。
+                        <br>
+                    </p>
+                </div>
+            </div>
+            <figure class="homeAbout-container-img l-mask js-inview is-show">
+                <img src="https://images.unsplash.com/photo-1583354608715-177553a4035e?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt class="i-zoomOut js-inview is-show">
+            </figure>
+        </section>
+    </div>
+    <div class="ranking">
+        <h3 class="ranking-title">Ranking</h3>
+        <div class="ranking-container">
+            <% i = 1 %>
+            <% @rank_posts.each do |t| %>
+                <div class="ranking-item">
+                    <%= image_tag t.image_url, class:"ranking-img" if t.image? %>
+                    <div class="shop-name"><b><%= t.store %></b></div>
+                    <% i = i+1 %>
+                </div>
+            <% end %>
+        </div>
+    </div>
+    <div class="category">
+        <h3 class="category-title">Search</h3>
+        <div class="category-container">
+            <div class="item1">
+                <a href="./shops">
+                    <div class="circumscribed-photo-box-hidden">
+                        <div class="mouse-over-mask">
+                            <div class="mask">
+                                <div class="mask-text">Diagnosis
+                                    <p>―カフェ診断―</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1545582037-684568ded252?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxNTgwfDB8MXxzZWFyY2h8NDM1fHxjYWZlfGVufDB8fHx8MTcwNDk2OTYxN3ww&ixlib=rb-4.0.3&q=80&w=400">
+                </a>
+            </div>
+            <div class="item2">
+            <a href="./posts/list">
+                <div class="circumscribed-photo-box-hidden">
+                    <div class="mouse-over-mask">
+                        <div class="mask">
+                            <div class="mask-text">Review
+                                <p>―クチコミ―</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="https://images.unsplash.com/photo-1602956033956-003e7180d339?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxNTgwfDB8MXxzZWFyY2h8MzQ0fHxjYWZlfGVufDB8fHx8MTcwNDk2MTA1M3ww&ixlib=rb-4.0.3&q=80&w=400">
+            </a>
+            </div>
+            <div class="item3">
+            <a href="./posts/category">
+                <div class="circumscribed-photo-box-hidden">
+                    <div class="mouse-over-mask">
+                        <div class="mask">
+                            <div class="mask-text">Category
+                                <p>―カテゴリー分類―</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="https://images.unsplash.com/photo-1625471200149-07ede15b728b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxNTgwfDB8MXxzZWFyY2h8MjI3fHxjYWZlfGVufDB8fHx8MTcwNDk2MTAxOHww&ixlib=rb-4.0.3&q=80&w=400">
+            </a>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,39 @@
+<div class="postslist">
+    <h3>投稿を検索</h3>
+    <p>お店の名前を入力したらそのお店の口コミのみ表示されます</p>
+    <%= form_tag({controller:"posts",action:"index"}, method: :get) do %>
+        <%= text_field_tag :search %>
+        <%= submit_tag '検索する'  %>
+    <% end %>
+
+    <%= link_to "口コミ一覧へ", posts_list_path%>
+
+    <div class="posts-container">
+        <% @posts.each do |t| %>
+            <div class="post">
+                <b><%= t.store %></b>
+                <%= t.category %>
+                <% if user_signed_in? %>
+                    <% if current_user.already_liked?(t) %>
+                        <%= link_to post_like_path(id: t.id, post_id: t.id), method: :delete do %>
+                            <i class="fas fa-heart""></i><%= t.likes.count %>
+                        <% end %>
+                    <% else %>
+                        <%= link_to post_likes_path(id: t.id, post_id: t.id), method: :post do %>
+                            <i class="fas fa-heart"></i><%= t.likes.count %>
+                        <% end %>
+                    <% end %>
+                <% else %>
+                    <i class="fas fa-heart"></i><%= t.likes.count %>
+                <% end %>
+                <%= link_to t.user.name, user_path(t.user.id) %>
+                <%= t.created_at.strftime('%Y/%m/%d') %>
+                <%= link_to "詳細へ", post_path(t.id) %>
+                <% if user_signed_in? && current_user.id == t.user_id %>
+                    <%= link_to "編集する", edit_post_path(t.id) %>
+                    <%= button_to "削除する", post_path(t.id), method: :delete %>
+                <% end %>
+            </div>
+        <% end %>
+    </div>
+</div>

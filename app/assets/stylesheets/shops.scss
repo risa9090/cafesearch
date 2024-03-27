@@ -1,0 +1,276 @@
+// Place all the styles related to the shops controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.shops-photo img{
+    width: 100%;
+    height: 867px;
+    border: 0;
+    vertical-align: bottom;
+
+}
+.shops-head{
+    text-align: center;
+}
+.shops-head h1{
+    padding-top: 150px;
+    font-family: 'Hannari','Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+    font-weight: normal;
+    font-size: 231%;
+}
+.shops-head p{
+    font-family: 'Hannari','Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+    font-weight: normal;
+}
+.shops-back {
+    width: auto;
+    // margin-left: auto;
+    // margin-right: auto;
+    background: url(https://backpackersjapan.co.jp/wp/wp-content/themes/backpackersjapan/img/pattern01.png);
+}
+.container-sindan{
+    padding-top: 50px;
+}
+.shindan-button{
+    padding-top: 50px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+// h1{text-align:center;margin:20% 0 5%;font-family:verdana;font-weight:100;}
+// .question ul li{
+//     // display: flex;
+//     position:relative;
+//     width:70%;
+//     margin:0 auto;
+//     // justify-content: center;
+//     font-family: 'Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+// }
+.col-6{
+    padding-top: 10px;
+    font-size: 18px;
+    font-family: 'Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+
+}
+.col-12{
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+}
+.question ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style: none;
+    border: none;
+    padding-left: 0;
+}
+.question ul li{
+    padding: 50px;
+    width: 200px;
+    transition: box-shadow 0.3s;
+}
+.question ul li:hover {
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.start,
+.start:before,
+.start:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+.start {
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    padding-top: 100px;
+    padding-bottom: 210px;
+}
+.btn,
+a.btn,
+button.btn {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+    border-radius: 0.5rem;
+}
+
+a.btn-svg {
+    font-weight: 700;
+    line-height: 54px;
+
+    width: 204px;
+    height: 54px;
+    padding: 0;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    background-color: transparent;
+}
+
+a.btn-svg svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+a.btn-svg svg rect {
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+
+    stroke: #000;
+    stroke-width: 2;
+    stroke-dasharray: 200px, 16px;
+    stroke-dashoffset: 70px;
+}
+
+a.btn-svg:hover svg rect {
+    stroke-dashoffset: 284px;
+}
+
+a.btn-svg span {
+    color: #000;
+    font-family: 'Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+}
+.shindan-btn {
+    width: 300px;
+    height: 50px;
+}
+.shops-head {
+    padding-top: 100px;
+}
+.shindan-container{
+    padding-bottom: 80px;
+    padding-top: 80px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+}
+.shindan-container h4 {
+    font-size: 25px;
+    padding-bottom: 50px;
+}
+.io.on{
+    transform: translate(0px,0px);
+    opacity: 1;
+}
+.io{
+    transition: opacity .6s,transform .6s;
+}
+.section{
+    margin: 75px auto;
+    display: block;
+}
+.grid--no-gutters{
+    display: flex;
+    margin-left: 0;
+}
+.grid{
+    flex-wrap: wrap;
+}
+.grid--no-gutters .grid__item {
+    padding-left: 0;
+    padding-bottom: 0;
+}
+.medium-up--one-half {
+    width: 50%;
+}
+.grid__item{
+    min-height: 1px;
+}
+.swiper-container{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+.swiper-lazy{
+    height: 500px;
+}
+.media {
+    height: 10;
+    line-height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    width: 100%;
+    background: #f4f7fa;
+}
+.media__image img {
+    padding-left: 20px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.p-content {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 19.2px 30px 0;
+    height: 100%;
+    max-width: 600px;
+}
+.shop-info {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 0 0;
+}
+.shop-info h3 {
+    font-size: 18px;
+    margin-bottom: 35px;
+    margin-top: 0;
+    text-align: center;
+}
+dl {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.shop-info dl dd {
+    width: 150px;
+    padding: 10px;
+    padding-right: 70px;
+}
+.shop-info dd, .shop-info dt {
+    font-size: 15px;
+}
+.shop-info dl dt {
+    width: calc(100% - 80px);
+    padding: 10px ;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.shop-item1,.shop-item2,.shop-item3,.shop-item4,.shop-item5{
+    display: flex;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}

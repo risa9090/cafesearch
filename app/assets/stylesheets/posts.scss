@@ -1,0 +1,630 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.photo1 img {
+    text-align:left;
+    width: 85%;
+    max-width: 100%;
+    border: 0;
+    vertical-align: bottom;
+}
+.back {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    background: url(https://backpackersjapan.co.jp/wp/wp-content/themes/backpackersjapan/img/pattern01.png);
+}
+.post-edit-back{
+    width: auto;
+    padding-top: 200px;
+    background: url(https://backpackersjapan.co.jp/wp/wp-content/themes/backpackersjapan/img/pattern01.png);
+    padding-bottom: 300px;
+}
+.review-list{
+    width: auto;
+    padding-top: 200px;
+    background: url(https://backpackersjapan.co.jp/wp/wp-content/themes/backpackersjapan/img/pattern01.png);
+    padding-bottom: 300px;
+    // text-align: center;
+}
+.review-list-head{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.review-list-head h1{
+    padding-bottom: 30px;
+    font-family: "Yu Mincho", 游明朝, YuMincho, "Hiragino Mincho ProN", serif;
+
+}
+.review-photo img{
+    width: 100%;
+    height: 870px;
+    border: 0;
+    vertical-align: bottom;
+}
+.list-container ul li{
+    text-align: center;
+    list-style: none;
+    // text-align: center;
+    padding-bottom: 20px;
+    margin: 2em auto;
+	padding:2em;/*内側余白*/
+	border:solid 2px #ccc;/*線の種類・太さ・色*/
+    width: 50%;
+}
+.shop-name{
+    text-align: center;
+    font-size: 20px;
+    font-family: "Yu Mincho", 游明朝, YuMincho, "Hiragino Mincho ProN", serif;
+}
+.l-base-wide {
+    width: auto;
+    // max-width: 1360;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: url(https://backpackersjapan.co.jp/wp/wp-content/themes/backpackersjapan/img/pattern01.png);
+}
+.l-heading {
+    padding-bottom: 0px;
+    padding-top: 500px;
+}
+.l-heading-subTitle {
+    font-family: 'Volkhov', serif;
+    font-weight: 400;
+    font-size: 231%;
+    padding-left: 150px;
+}
+.l-heading-title {
+    font-family: "Yu Mincho", 游明朝, YuMincho, "Hiragino Mincho ProN", serif;
+    font-size: 124%;
+    font-weight: normal;
+    padding-top: 0.8em;
+    padding-left: 150px;
+    margin: 0;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.homeAbout-container {
+    display: flex;
+    align-items: center;
+}
+.is-show .l-mask, .is-show.l-mask {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 100%);
+}
+.homeAbout-container-img {
+    width: 52%;
+}
+.l-mask {
+    display: inline-block;
+    clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0 100%);
+    transition: all 1s cubic-bezier(0.5, 1, 0.89, 1);
+    vertical-align: middle;
+}
+.is-show.l-zoomOut {
+    transform: scale(1);
+}
+
+.l-zoomOut {
+    transform: scale(1.08);
+    transition: all 2s cubic-bezier(0.5, 1, 0.89, 1);
+}
+.homeAbout-container img {
+    object-fit: cover;
+    // max-width: 80%;
+    height: 700px;
+    width: 500px;
+    border: 0;
+    padding-left: 200px;
+    // vertical-align: bottom;
+}
+.homeAbout-container-inner {
+    flex: 1;
+    text-align: center;
+    // padding: 30px;
+    padding-left: 100px;
+}
+.homeAbout-container-box {
+    display: inline-block;
+    text-align: left;
+}
+[data-aos^=fade][data-aos^=fade].aos-animate {
+    font-size: 14px;
+    opacity: 1;
+    transform: translateZ(0);
+}
+[data-aos][data-aos][data-aos-easing=ease], body[data-aos-easing=ease] [data-aos] {
+    transition-timing-function: ease;
+}
+
+[data-aos][data-aos][data-aos-duration="1200"], body[data-aos-duration="1200"] [data-aos] {
+    transition-duration: 1.2s;
+}
+[data-aos^=fade][data-aos^=fade] {
+    opacity: 0;
+    transition-property: opacity,transform;
+}
+
+[data-aos=fade-up] {
+    transform: translate3d(0,20px,0);
+}
+.homeAbout-heading {
+    padding-top: 0;
+}
+.homeAbout-heading-title {
+    font-family: 'Hannari','Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+    font-weight: normal;
+    font-size: 231%;
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+.homeAbout-heading-subTitle {
+    font-family: 'EB Garamond', serif;
+    font-size: 170%;
+    font-weight: normal;
+    padding-top: 1em;
+    letter-spacing: 0.05em;
+    padding-bottom: 30px;
+}
+.homeAbout-text {
+    font-family: 'Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+    line-height: 2.2;
+    font-size: 105%;
+    padding-top: 4em;
+}
+.category {
+    background: url(https://backpackersjapan.co.jp/wp/wp-content/themes/backpackersjapan/img/pattern01.png);
+}
+.category-container {
+    justify-content: center;
+    display: flex;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+.category-container img{
+    width: 300px;
+    padding: 25px;
+} 
+.category h3 {
+    font-family: 'Hannari','Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+    font-weight: normal;
+    font-size: 231%;
+    letter-spacing: 0.1em;
+    padding-top: 200px;
+    padding-left: 100px;
+    margin-top: 0;
+}
+
+.item1 .circumscribed-photo-box-hidden {
+    width: 100%;
+    position: relative;
+}
+.item1 .mask {
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    padding-top: 75%; /* 画像の高さ調整をした場合は、こちらも同じ値に変更 */
+    top: 25px;
+    left: 25px;
+    background-color: rgba(0,0,0,0.8);
+}
+.item1 .mask-text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    font-size: 0.8em;
+    color: #fff;
+    text-align: center;
+}
+.item1 .mouse-over-mask {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 1.0s ease;
+}
+.item1:hover .mouse-over-mask {
+    opacity: 1;
+}
+
+.item2 .circumscribed-photo-box-hidden {
+    width: 100%;
+    position: relative;
+}
+.item2 .mask {
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    padding-top: 75%; /* 画像の高さ調整をした場合は、こちらも同じ値に変更 */
+    top: 25px;
+    left: 25px;
+    background-color: rgba(0,0,0,0.8);
+}
+.item2 .mask-text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    font-size: 0.8em;
+    color: #fff;
+    text-align: center;
+}
+.item2 .mouse-over-mask {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 1.0s ease;
+}
+.item2:hover .mouse-over-mask {
+    opacity: 1;
+}
+.item3 .circumscribed-photo-box-hidden {
+    width: 100%;
+    position: relative;
+}
+.item3 .mask {
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    padding-top: 75%; /* 画像の高さ調整をした場合は、こちらも同じ値に変更 */
+    top: 25px;
+    left: 25px;
+    background-color: rgba(0,0,0,0.8);
+}
+.item3 .mask-text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    font-size: 0.8em;
+    color: #fff;
+    text-align: center;
+}
+.item3 .mouse-over-mask {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 1.0s ease;
+}
+.item3:hover .mouse-over-mask {
+    opacity: 1;
+}
+.ranking-container {
+    justify-content: center;
+    display: flex;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+.ranking {
+    background: url(https://backpackersjapan.co.jp/wp/wp-content/themes/backpackersjapan/img/pattern01.png);
+}
+
+.ranking-item {
+    counter-increment: rank;
+    padding: 50px;
+}
+.ranking-item::before {
+    display: block;
+    content: "第" counter(rank) "位";
+    color: black;
+    font-weight: 1000;
+    line-height: initial;
+    padding-left: 150px;
+    padding-bottom: 30px;
+    font-family: 'Hannari','Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+    font-size: 20px;
+}
+.ranking h3 {
+    font-family: 'Hannari','Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+    font-weight: normal;
+    font-size: 231%;
+    letter-spacing: 0.1em;
+    padding-top: 200px;
+    padding-left: 100px;
+    margin-top: 0;
+}
+.ranking-img{
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+    font-family: 'object-fit: cover;';
+}
+.review{
+    padding-top: 200px;
+    text-align: center;
+    font-family: 'Hannari','Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+    background: url(https://backpackersjapan.co.jp/wp/wp-content/themes/backpackersjapan/img/pattern01.png);
+    padding-bottom: 100px;
+}
+.review h1{
+    margin-bottom: 0;
+}
+.review h4{
+    margin-top: 0;
+    padding-bottom: 50px;
+}
+.review-field p{
+    width: 15%;
+    padding-left: 200px;
+}
+.field1,.field2,.field3,.field4,.field5{
+    display: flex;
+    padding-bottom: 20px;
+}
+.review-button{
+    padding-top: 50px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+.review-btn {
+    width: 300px;
+    height: 50px;
+    font-size: 15px;
+    font-family: 'Hannari','Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+}
+.review-list{
+    padding-top: 200px;
+}
+.post-edit-button{
+    padding-top: 100px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+.post-edit-btn {
+    width: 300px;
+    height: 50px;
+}
+.post-edit-back h3{
+    font-family: 'Hannari','Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+    font-weight: normal;
+    font-size: 231%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.post-edit-back p {
+    width: 15%;
+    padding-left: 250px;
+    font-family: 'Hannari','Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+
+}
+.post-edit-item1,.post-edit-item2,.post-edit-item3,.post-edit-item4,.post-edit-item5{
+    display: flex;
+    padding-bottom: 20px;
+
+}
+.list-class{
+    display: flex;
+    justify-content: center;
+}
+.store-name{
+    width: 310px;
+    padding-top: 30px;
+    padding-left: 50px;
+    line-height: 2;
+}
+.list-class img{
+    width: 200px;
+    height: 260px
+}
+// カテゴリーページ
+.category-hunniki{
+    padding-top: 150px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-family: 'Hannari','Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+    background: url(https://backpackersjapan.co.jp/wp/wp-content/themes/backpackersjapan/img/pattern01.png);
+}
+.category-hunniki h2{
+    font-weight: normal;
+    font-size: 231%;
+    padding-bottom: 40px;
+    
+}
+.category-hunniki ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+}
+.category-hunniki li{
+    list-style: none;
+    padding: 40px;
+}
+.category-hunniki img{
+    width: 300px;
+    height: 200px;
+}
+
+// クチコミ詳細ページ
+.reviewshosai-head{
+    text-align: center;
+}
+.reviewshosai-head h1{
+    padding-top: 150px;
+    font-family: 'Hannari','Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+    font-weight: normal;
+    font-size: 231%;
+}
+.reviewshosai-head p{
+    font-family: 'Hannari','Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+    font-weight: normal;
+}
+.reviewshosai-back {
+    width: auto;
+    // margin-left: auto;
+    // margin-right: auto;
+    background: url(https://backpackersjapan.co.jp/wp/wp-content/themes/backpackersjapan/img/pattern01.png);
+}
+.post-shosai{
+    display: flex;
+    justify-content: center;
+}
+.postshosai-content1,.postshosai-content2{
+    padding: 100px;
+}
+.postshosai-content2 p{
+    line-height: 4;
+    font-family: 'Hannari','Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+    font-weight: normal;
+}
+.postshosai-content2 b{
+    font-family: 'Hannari','Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+    font-weight: normal;
+    font-size: 200%;
+}
+.postshosai-content1 img{
+    width: 400px;
+    height: 500px;
+}
+
+// カテゴリー別店舗一覧表示ページ
+.hunniki-container{
+    padding-top: 80px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+}
+.hunniki-container h4 {
+    font-size: 25px;
+    padding-bottom: 50px;
+}
+.io.on{
+    transform: translate(0px,0px);
+    opacity: 1;
+}
+.io{
+    transition: opacity .6s,transform .6s;
+}
+.hunniki-container section{
+    margin: 75px auto;
+    display: block;
+    padding-bottom: 130px;
+}
+.grid--no-gutters{
+    display: flex;
+    margin-left: 0;
+}
+.grid{
+    flex-wrap: wrap;
+}
+.grid--no-gutters .grid__item {
+    padding-left: 0;
+    padding-bottom: 0;
+}
+.medium-up--one-half {
+    width: 50%;
+}
+.grid__item{
+    min-height: 1px;
+}
+.swiper-container{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+.swiper-lazy{
+    height: 500px;
+}
+.media {
+    height: 10;
+    line-height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    width: 100%;
+    background: #f4f7fa;
+}
+.media__image img {
+    padding-left: 20px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.p-content {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 19.2px 30px 0;
+    height: 100%;
+    max-width: 600px;
+}
+.shop-info {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 0 0;
+}
+.shop-info h3 {
+    font-size: 18px;
+    margin-bottom: 35px;
+    margin-top: 0;
+    text-align: center;
+}
+dl {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.shop-info dl dd {
+    width: 150px;
+    padding: 10px;
+    padding-right: 70px;
+}
+.shop-info dd, .shop-info dt {
+    font-size: 15px;
+}
+.shop-info dl dt {
+    width: calc(100% - 80px);
+    padding: 10px ;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.shop-item1,.shop-item2,.shop-item3,.shop-item4,.shop-item5{
+    display: flex;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+.hunniki-back{
+    padding-top: 150px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-family: 'Hannari','Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+    background: url(https://backpackersjapan.co.jp/wp/wp-content/themes/backpackersjapan/img/pattern01.png);
+}
+
+.hunniki-back h1{
+    padding-top: 40px;
+    
+}

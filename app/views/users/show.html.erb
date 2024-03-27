@@ -1,0 +1,40 @@
+<div class="user-back">
+    <div class="user-show">
+        <div class="user-head">
+            <h1>My Page</h1>
+            <p>名前 : <%= @user.name %></p>
+            <p>メールアドレス : <%= @user.email %></p>
+            <p>プロフィール : <%= @user.profile %></p>
+        </div>
+        <div class="user-edit-button">
+            <% if current_user.id == @user.id %>
+                <%= link_to "編集する", edit_user_registration_path, class: "user-edit" %>
+            <% end %>
+        </div>
+        <div class="mypage-container">
+            <div class="content1">
+                <h2>Posts list</h2>
+                <p>― ユーザーの投稿一覧 ―</p>
+                <ul>
+                    <% @user.posts.each do |t| %>
+                        <li><%= image_tag t.image_url, class:"mypageshop-img" if t.image? %>
+                        <%= t.store %>
+                        <br><%= t.category %>
+                    <% end %>
+                </ul>
+            </div>
+            <div class="content2">
+                <h2>List of liked posts</h2>
+                <p>― ユーザーがいいねした投稿一覧 ―</p>
+                <ul>
+                <% @user.liked_posts.each do |t| %>
+                    <li><%= image_tag t.image_url, class:"mypageshop-img" if t.image? %>
+                        <%= t.store %>
+                        <br><%= t.category %>
+                        <br>投稿者 : <%= t.user.name %>
+                    <% end %>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

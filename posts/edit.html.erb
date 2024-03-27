@@ -1,0 +1,32 @@
+<div class="post-edit-back">
+    <h3>Edit</h3>
+    <%= form_for @post do |f| %>
+        <div class="post-edit-item1">
+            <p><%= f.label :カフェの名前 %></p>
+            <%= f.text_field :store, :size => 100 %> 
+        </div>
+
+        <div class="post-edit-item2">
+            <p><%= f.label :雰囲気 %></p>
+            <%= f.select :category, [["レトロ", "：レトロ"], ["落ち着く", "：落ち着く"], ["にぎやか", "：にぎやか"], ["無機質", "：無機質"], ["自然", "：自然豊か"], ["アート", "：アート"], ["アメリカン", "：アメリカン"], ["和風", "：和風"], ["ヴィンテージ", "：ヴィンテージ"]], include_blank: "どんな雰囲気？" %>
+        </div>
+
+        <div class="post-edit-item3">
+            <p><%= f.label :注文したメニュー %></p>
+            <%= f.text_field :menu, :size => 100 %> 
+        </div>
+
+        <div class="post-edit-item4">
+            <p><%= f.label :感想 %></p>
+            <%= f.text_field :comment, :size => 100 %> 
+        </div>
+
+        <div class="post-edit-item5">
+            <p><%= f.label :写真 %></p>
+            <%= f.text_field :image, :size => 100 %>
+        </div>
+        <div class="post-edit-button">
+            <%= f.submit "編集する", class:"post-edit-btn"  %>
+        </div>
+    <% end %>
+</div>

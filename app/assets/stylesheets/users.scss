@@ -1,0 +1,149 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.user-back {
+    padding-top: 150px;
+    width: auto;
+    background: url(https://backpackersjapan.co.jp/wp/wp-content/themes/backpackersjapan/img/pattern01.png);
+}
+.user-head{
+    text-align: center;
+}
+.user-head h1{
+    font-family: 'Hannari','Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.user-head p{
+    padding-bottom: 10px;
+}
+.user-edit-button{
+    padding-top: 20px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.user-show h2{
+    font-family: 'Hannari','Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+    font-weight: normal;
+    font-size: 231%;
+    text-align: center;
+}
+.user-show h3{
+    font-family: 'Hannari','Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+    font-weight: normal;
+    font-size: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+.user-field{
+    text-align: center;
+    font-family: 'Hannari','Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+    font-size: 120%;
+}
+.edit-user-field{
+    padding-bottom: 20px;
+}
+.actions{
+    padding-top: 50px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+.action-btn{
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
+    font-family: 'Hannari','Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+}
+.user-back h3{
+    font-family: 'Hannari','Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+    font-weight: normal;
+    font-size: 231%;
+    text-align: center;
+    margin-bottom: 0;
+}
+.edit-user h2{
+    font-family: 'Hannari','Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+    font-weight: normal;
+    font-size: 231%;
+    text-align: center;
+}
+.actions p{
+    padding-bottom: 50px;
+    font-family: 'Hannari','Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+    font-size: 120%;
+}
+
+.login-container{
+    padding-top: 150px;
+    width: auto;
+    height: 720px;
+    background: url(https://backpackersjapan.co.jp/wp/wp-content/themes/backpackersjapan/img/pattern01.png);
+}
+.login-container h2{
+    font-family: 'Hannari','Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+    font-weight: normal;
+    font-size: 231%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.login-container p{
+    display: flex;
+    justify-content: center;
+}
+.login-container p a{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.login-field1,.login-field2{
+    text-align: center;
+    padding-bottom: 40px;
+    
+}
+.login-field1 h3,.login-field2 h3{
+    font-family: 'Hannari','Yu Mincho','游明朝',YuMincho,'Hiragino Mincho ProN',serif;
+    font-size: 20px;
+}
+// .mypage-container{
+//     display: flex;
+//     justify-content: center;
+// }
+.content1, .content2{
+    padding: 30px;
+}
+.content1 h2, .content2 h2{
+    margin-bottom: 0;
+    text-align: center;
+}
+.content1 p, .content2 p{
+    padding-bottom: 20px;
+    text-align: center;
+}
+.content1 li, .content2 li{
+    padding: 30px;
+    width: 240px;
+    text-align: center;
+}
+// .content1{
+//     margin-left: 30px;
+// }
+
+.mypageshop-img{
+    width: 240px;
+    height: 310px;
+    display: flex;
+    // flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+.mypage-container li{
+    list-style: none;
+    // display: inline-block;
+    // text-align: center;
+}
+.content1 ul,.content2 ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+}

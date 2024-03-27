@@ -1,0 +1,54 @@
+<div class="review-photo"> 
+    <img src="https://images.unsplash.com/photo-1542181961-9590d0c79dab?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+</div>
+<div class="review-list">
+    <div class="review-list-head">
+        <h1>Review</h1>
+
+        お店の名前を入力したらそのお店の口コミのみ表示されます
+        <%= form_tag({controller:"posts",action:"list"}, method: :get) do %>
+            <%= text_field_tag :search %>
+            <%= submit_tag '検索する'  %>
+        <% end %> 
+    </div>
+
+    <div class="list-container">
+            <% @posts.each do |t| %>
+                <ul>
+                <div class="post-review">
+                <li><div class="list-class">
+                        <%= image_tag t.image_url, size: "220x260" if t.image? %>
+                        <div class="store-name">
+                            <b><%= t.store %></b>
+                            <br><%= t.category %>
+                            <br><%= t.comment %><br>
+                            <br>
+                            <% if user_signed_in? %>
+                                <% if current_user.already_liked?(t) %>
+                                    <%= link_to post_like_path(id: t.id, post_id: t.id), method: :delete do %>
+                                        <i class="fas fa-heart"></i><%= t.likes.count %>
+                                    <% end %>
+                                <% else %>
+                                    <%= link_to post_likes_path(id: t.id, post_id: t.id), method: :post do %>
+                                        <i class="fas fa-heart"></i><%= t.likes.count %>
+                                    <% end %>
+                                <% end %>
+                            <% else %>
+                                <i class="fas fa-heart"></i><%= t.likes.count %>
+                            <% end %>
+
+                            <%= link_to t.user.name, user_path(t.user.id) %>
+                            <%= t.created_at.strftime('%Y/%m/%d') %>
+                            <%= link_to "詳細へ", post_path(t.id) %>
+                            <%= link_to "編集する", edit_post_path(t.id) %>
+                            <%= button_to "削除する", post_path(t.id), method: :delete %>
+                        </div>
+                    </div>
+                    
+                    
+                </li>
+                </ul>
+            <% end %>
+        
+    </div>
+</div>

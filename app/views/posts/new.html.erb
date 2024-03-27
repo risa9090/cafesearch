@@ -1,0 +1,31 @@
+<div class="review">
+    <h1>Review</h1>
+    <h4>― 新規投稿 ―</h4>
+    <%= form_for @post do |f| %>
+        <div class="review-field">
+            <div class="field1">
+                <p><%= f.label :カフェの名前 %></p>
+                <%= f.text_field :store, :size => 100 %>
+            </div>
+            <div class="field2">
+                <p><%= f.label :雰囲気 %></p>
+                <%= f.select :category, [["レトロ", "：レトロ"], ["落ち着く", "：落ち着く"], ["にぎやか", "：にぎやか"], ["無機質", "：無機質"], ["自然", "：自然豊か"], ["アート", "：アート"], ["アメリカン", "：アメリカン"], ["和風", "：和風"], ["ヴィンテージ", "：ヴィンテージ"]], include_blank: "どんな雰囲気？" %>
+            </div>
+            <div class="field3">
+                <p><%= f.label :注文したメニュー %></p>
+                <%= f.text_field :menu, :size => 100 %>
+            </div>
+            <div class="field4">
+                <p><%= f.label :感想 %></p>
+                <%= f.text_field :comment, :size => 100 %>
+            </div>
+            <div class="field5">
+                <p><%= f.label :写真 %></p>
+                <%= f.file_field :image %>
+            </div>
+        </div>
+        <div class="review-button">
+            <%= f.submit "投稿する", class:"review-btn"%>
+        </div>
+    <% end %>
+</div>
